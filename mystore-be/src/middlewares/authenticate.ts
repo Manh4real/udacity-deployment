@@ -1,5 +1,6 @@
 import { RequestHandler } from "express";
 import jwt from "jsonwebtoken";
+import { environment } from "../../environment";
 
 export const authenticate: RequestHandler = (req, res, next) => {
   const authorizationHeader = req.headers.authorization;
@@ -7,7 +8,7 @@ export const authenticate: RequestHandler = (req, res, next) => {
   const token = authorizationHeader?.split(" ")[1];
 
   if (token) {
-    jwt.verify(token, process.env.JWT_SECRET!, (err, payload) => {
+    jwt.verify(token, environment.JWT_SECRET!, (err, payload) => {
       if (err) {
         return res.status(403).json({
           status: "error",

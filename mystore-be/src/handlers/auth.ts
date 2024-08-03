@@ -7,6 +7,7 @@ crypto.randomBytes(48);
 
 import { db } from "../db";
 import { IUser } from "../models/user";
+import { environment } from "../../environment";
 
 export const login: RequestHandler = async (req, res) => {
   try {
@@ -33,7 +34,7 @@ export const login: RequestHandler = async (req, res) => {
             firstName: user.firstName,
             lastName: user.lastName,
           },
-          process.env.JWT_SECRET!
+          environment.JWT_SECRET!
         );
 
         res.status(200).send({

@@ -1,1 +1,3 @@
-export const DEFAULT_PRODUCT_IMAGE_URL = `${process.env.BASE_URL}/default-product-image`;
+import { environment } from "../environment";
+
+export const DEFAULT_PRODUCT_IMAGE_URL = `${environment.BASE_URL}/default-product-image`;
