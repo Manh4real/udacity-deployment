@@ -5,11 +5,11 @@ import morgan from "morgan";
 import dotenv from "dotenv";
 import cors from "cors";
 
-import userRoutes from "./routes/user";
-import productRoutes from "./routes/product";
-import orderRoutes from "./routes/order";
-import orderProductRoutes from "./routes/order-product";
-import authRoutes from "./routes/auth";
+import userRoutes from "./src/routes/user";
+import productRoutes from "./src/routes/product";
+import orderRoutes from "./src/routes/order";
+import orderProductRoutes from "./src/routes/order-product";
+import authRoutes from "./src/routes/auth";
 
 dotenv.config();
 export const app: express.Application = express();

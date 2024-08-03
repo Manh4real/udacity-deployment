@@ -3,7 +3,7 @@ import supertest from "supertest";
 import { Order } from "../../../src/models/order";
 import { Product } from "../../../src/models/product";
 import { User } from "../../../src/models/user";
-import { app } from "../../../src/server";
+import { app } from "../../../server";
 
 let route = supertest(app);
 const user = new User();
