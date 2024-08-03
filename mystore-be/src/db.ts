@@ -26,14 +26,12 @@ if (environment.ENV === "test") {
   });
 } else if (environment.ENV === "prod") {
   db = new Pool({
-    connectionString:
-      "udacity-storefront.ckudhnwojkuf.us-east-1.rds.amazonaws.com",
     host: environment.POSTGRES_HOST,
     database: environment.POSTGRES_DB,
     user: environment.POSTGRES_USER,
     password: environment.POSTGRES_PASSWORD,
     port: Number(environment.POSTGRES_PORT) || 4000,
-    ssl: true,
+    ssl: { rejectUnauthorized: false },
   });
 }
 

@@ -13,8 +13,8 @@ import authRoutes from "./src/routes/auth";
 
 dotenv.config();
 export const app: express.Application = express();
-const address: string = "0.0.0.0:3000";
-const port = Number(process.env.PORT || 3000);
+const address: string = "0.0.0.0:8080";
+const port = Number(process.env.PORT || 8080);
 
 app.use(cors());
 app.use(morgan("dev"));

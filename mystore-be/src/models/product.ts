@@ -12,15 +12,18 @@ interface IProduct {
 export class Product {
   async index(): Promise<IProduct[]> {
     try {
+      console.log("DB connecting...");
       const conn = await db.connect();
+      console.log("DB connected");
 
       const sql = "SELECT * FROM products";
-      const result = await conn.query(sql);
+      const result = await db.query(sql);
 
       conn.release();
 
       return result.rows as IProduct[];
     } catch (err: any) {
+      console.log(err);
       throw new Error(`Could not get products. Error: ${err}`);
     }
   }
