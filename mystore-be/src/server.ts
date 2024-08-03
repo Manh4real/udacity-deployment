@@ -14,6 +14,7 @@ import authRoutes from "./routes/auth";
 dotenv.config();
 export const app: express.Application = express();
 const address: string = "0.0.0.0:3000";
+const port = Number(process.env.PORT || 3000);
 
 app.use(cors());
 app.use(morgan("dev"));
@@ -32,6 +33,6 @@ app.use("/default-product-image", (req, res) => {
   res.sendFile(filePath);
 });
 
-app.listen(3000, function () {
+app.listen(port, function () {
   console.log(`starting app on: ${address}`);
 });

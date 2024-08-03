@@ -1,12 +1,15 @@
 {
+  "engines": {
+    "node": "18.17.0"
+  },
   "name": "storefront_backend",
   "version": "0.1.0",
   "description": "",
   "main": "server.ts",
   "scripts": {
-    "start": "npm run build && npx nodemon dist/src/server.js",
-    "build": "npx rimraf dist && tsc",
-    "watch": "npx rimraf dist && tsc --watch",
+    "start": "node dist/src/server.js",
+    "build": "npx tsc",
+    "watch": "npx rimraf dist && npx tsc --watch",
     "test": "ENV=test db-migrate --env test up && (jasmine || true) && db-migrate --env test reset"
   },
   "author": "Udacity",

@@ -16,7 +16,7 @@ export const environment = {
   POSTGRES_PROD_USER: "storefront_user",
   POSTGRES_PROD_PASSWORD: "storefront_db",
 
-  BASE_URL: "http://localhost:3000",
+  BASE_URL: "http://udacity-deployment-dev.us-west-2.elasticbeanstalk.com",
 
   JWT_SECRET:
     "722e356fd4e51a265044b27803ec8bfc095f9fdf13abc68605f23eec9d172b26817c5488b151034123be15f79f287f9b",
