@@ -20,9 +20,6 @@ app.use(cors());
 app.use(morgan("dev"));
 app.use(bodyParser.json());
 
-app.use("/", (req, res) => {
-  res.status(200).send("Welcome Udacity - MyStore");
-});
 app.use("/products", productRoutes);
 app.use("/users", userRoutes);
 app.use("/orders", orderRoutes);
