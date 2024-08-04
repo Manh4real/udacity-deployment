@@ -12,9 +12,7 @@ interface IProduct {
 export class Product {
   async index(): Promise<IProduct[]> {
     try {
-      console.log("DB connecting...");
       const conn = await db.connect();
-      console.log("DB connected");
 
       const sql = "SELECT * FROM products";
       const result = await db.query(sql);

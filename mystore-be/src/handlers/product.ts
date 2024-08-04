@@ -5,9 +5,8 @@ const model = new Product();
 
 export const getProducts: RequestHandler = async (req, res) => {
   try {
-    console.log("fetching...");
     const products = await model.index();
-    console.log("fetched...", products);
+
     res.status(200).send(products);
   } catch (err) {
     res.status(500).send({
