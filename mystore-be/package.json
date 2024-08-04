@@ -2,7 +2,7 @@
   "engines": {
     "node": ">=18.0.0 <21.0.0"
   },
-  "name": "storefront_backend",
+  "name": "mystore-be",
   "version": "0.1.0",
   "description": "",
   "main": "server.ts",
@@ -13,7 +13,8 @@
     "watch": "npm run clean && tsc --watch",
     "clean": "rimraf dist/",
     "clear": "npm cache clean -f && rm -rf node_modules package-lock.json",
-    "test": "ENV=test db-migrate --env test up && (jasmine || true) && db-migrate --env test reset"
+    "test": "ENV=test db-migrate --env test up && (jasmine || true) && db-migrate --env test reset",
+    "deploy": "chmod +x bin/deploy.sh && bin/deploy.sh"
   },
   "author": "Udacity",
   "license": "ISC",
