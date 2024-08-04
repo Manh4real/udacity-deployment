@@ -1,0 +1,17 @@
+## Links
+
+Hosted FE link: [here](http://mybucket1720961397407.s3-website.us-east-2.amazonaws.com/)
+
+## Screenshots
+
+- Pipeline:
+  ![Successful Pipeline](image.png)
+
+- RDS:
+  ![RDS Overview](image-1.png)
+
+- Elastic Beanstalk (BE)
+  ![Elastic Beanstalk](image-3.png)
+
+- S3 (FE)
+  ![S3](image-4.png)
