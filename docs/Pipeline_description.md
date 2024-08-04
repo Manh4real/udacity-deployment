@@ -43,4 +43,4 @@ This document explains the different steps involved in our CI/CD pipeline, from 
 
 ## Diagram
 
-![Pipeline](/screenshots/pipeline.png)
+![Pipeline](/screenshots/pipeline-diagram.drawio.png)
