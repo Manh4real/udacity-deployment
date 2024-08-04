@@ -5,13 +5,13 @@ Hosted FE link: [here](http://mybucket1720961397407.s3-website.us-east-2.amazona
 ## Screenshots
 
 - Pipeline:
-  ![Successful Pipeline](image.png)
+  ![Successful Pipeline](screenshots/image.png)
 
 - RDS:
-  ![RDS Overview](image-1.png)
+  ![RDS Overview](screenshots/image-1.png)
 
 - Elastic Beanstalk (BE)
-  ![Elastic Beanstalk](image-3.png)
+  ![Elastic Beanstalk](screenshots/image-3.png)
 
 - S3 (FE)
-  ![S3](image-4.png)
+  ![S3](screenshots/image-4.png)

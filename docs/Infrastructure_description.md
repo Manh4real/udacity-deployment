@@ -38,4 +38,4 @@ This document outlines the infrastructure components required for our applicatio
 
 ## Diagram
 
-![Architecture Diagram](architecture-diagram.drawio-1.png)
+![Architecture Diagram](/screenshots/architecture-diagram.drawio-1.png)
